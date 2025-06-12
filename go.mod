@@ -76,4 +76,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace stacuity.com/go_client => /stacuity
+replace stacuity.com/go_client => ./stacuity
