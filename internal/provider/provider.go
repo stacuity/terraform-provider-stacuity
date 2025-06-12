@@ -44,7 +44,7 @@ func (p *StacuityProvider) Schema(_ context.Context, _ provider.SchemaRequest, r
 			},
 			"token": schema.StringAttribute{
 				Description: "Token for Stacuity API. May also be provided via STACUITY_TOKEN environment variable.",
-				Optional:    true,
+				Required:    true,
 				Sensitive:   true,
 			},
 		},

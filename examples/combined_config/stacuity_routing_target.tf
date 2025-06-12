@@ -14,7 +14,7 @@ resource "stacuity_routing_target" "test_routing_target_wireguard" {
   }
   vslice                          = stacuity_vslice.terraform_combined_vslice.moniker
   routing_target_type             = "wireguard"
-  routing_target_type_instance_id = 6 //ma5-prod-vpn-01a-wg
+  routing_target_type_instance_id = "ma5-prod-vpn-01a-wg"
 }
 
 resource "stacuity_routing_target" "test_routing_target_internet" {
@@ -23,5 +23,5 @@ resource "stacuity_routing_target" "test_routing_target_internet" {
   redundancy_zone_moniker         = "north-america-primary"
   vslice                          = stacuity_vslice.terraform_combined_vslice.moniker
   routing_target_type             = "internet"
-  routing_target_type_instance_id = 7
+  routing_target_type_instance_id = "dc14-prod-nat-01a"
 }
